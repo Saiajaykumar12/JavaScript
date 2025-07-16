@@ -25,10 +25,14 @@
 
 // console.log(a);
 // let a = 10;
+const a = 10;
+console.log(a);
+
+
+console.log(typeof(a))
+
+console.log(typeof a)
 
 // console.log(a);
-// const a = 10;
-
-console.log(a);
-const a = 40;
+// const a = 40;
 
