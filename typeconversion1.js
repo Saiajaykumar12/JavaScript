@@ -32,6 +32,24 @@
 // f = parseInt(f);
 // console.log(f);    //NaN
 
+// console.log(Boolean(0));
+// console.log(Boolean(""));
+// console.log(Boolean(null));
+// console.log(Boolean(undefined));          false for this all boolean values
+// console.log(Boolean(NaN));
+// console.log(Boolean(-0))
+
+
+// console.log(Boolean(" "));              true
+
+// console.log(1 + undefined);               NaN
+// console.log(1 + null);                      1
+
+// console.log(1 + 2 + "Hello" + undefined);
+
+// console.log(1 + 2 + "hi" + null);
+
+// console.log("10" / 2 );             Except "+" every operator is an operation
 
 
 
