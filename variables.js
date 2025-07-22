@@ -55,7 +55,7 @@
 // console.log(typeof(a));
 
 // let a = null;
-// console.log(typeof(a));
+// console.log(typeof(a));            //object
 
 // let a = 234567654335665432n;
 // console.log(typeof(a));
@@ -84,9 +84,9 @@
 // console.log(car.company);
 // console.log(car.price);
 
-let student = {
-    name : "Ajay",
-    age : 21,
-    passed : true
-};
-console.log(student);
+// let student = {
+//     name : "Ajay",
+//     age : 21,
+//     passed : true
+// };
+// console.log(student);
