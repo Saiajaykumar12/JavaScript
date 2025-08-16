@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+</head>
+<body>
+    <script>
+        const cards = document.createElement('div');
+        document.body.appendChild(cards);
+
+
+        const card1 = document.createElement('div');
+        console.log(card1);
+        document.body.appendChild(card1);
+        card1.style.border = '1px solid black';
+        card1.style.margin = '2px 970px 10px 10px';
+        card1.style.color = 'blue';
+        card1.style.backgroundColor = 'pink';
+        card1.style.position = 'relative';
+        card1.style.top = '100px';
+        card1.style.left = '400px';
+
+
+        const h4var = document.createElement('h2');
+        console.log(h4var);
+        h4var.textContent = "Pizza";
+        card1.appendChild(h4var);
+        h4var.style.marginLeft = '10px';
+        // h4var.style.background = 'yellow'
+
+        const img1 = document.createElement('img');
+        console.log(img1);
+        img1.setAttribute('src','https://media.istockphoto.com/id/187248625/photo/pepperoni-pizza.jpg?s=1024x1024&w=is&k=20&c=7A7_uRfvthKD3VZxM51xtBOeyISeXBhBgXrdOPLco68=');
+        card1.appendChild(img1);
+        img1.style.height = '200px';
+        img1.style.width = '250px';
+        img1.style.marginLeft = '10px';
+
+        const type = document.createElement('p');
+        type.textContent = "California-style pizza";
+        card1.appendChild(type);
+        type.style.color = 'red';
+        type.style.marginLeft = '10px';
+
+        const price = document.createElement('h3');
+        console.log(price);
+        price.textContent = "129 rs/- only";
+        card1.appendChild(price);
+        price.style.marginLeft = '10px';
+
+
+    </script>
+</body>
+</html>

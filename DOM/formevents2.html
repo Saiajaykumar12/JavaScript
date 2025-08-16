@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            height: 400px;
+            width: 400px;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <form id="formid">
+        User details
+        <input type="text" placeholder="Enter username" id="inputid"><br><br>
+        <button>Submit</button>
+    </form><br><br>
+
+    <div>
+        <h1>User Details</h1>
+        <h2 id="h2id"></h2>
+    </div>
+
+    <script>
+
+        // input      submit           reset         focus        blur
+
+        const formvar = document.getElementById('formid');
+        const inputvar = document.getElementById('inputid');
+        const h2var = document.getElementById('h2id');
+
+        formvar.addEventListener('submit',function(e){
+            e.preventDefault();
+            const storevar = inputvar.value;
+            h2var.textContent = storevar;
+            formvar.reset();
+        })
+
+        inputvar.addEventListener('focus',function(e){
+            e.preventDefault();
+            console.log("Focused")
+        })
+
+        inputvar.addEventListener('blur',function(e){
+            e.preventDefault();
+            console.log("Blurred")
+        })
+
+    </script>
+
+
+</body>
+</html>

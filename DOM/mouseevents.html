@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="div-1">
+        <img src="https://cdn.pixabay.com/photo/2025/07/10/07/24/house-9706056_1280.jpg" alt="ImageHouse" id="image-1" >
+    </div>
+
+
+    <script>
+        
+        const dvar = document.getElementById('div-1');
+        dvar.style.height = '400px';
+        dvar.style.width = '400px';
+        dvar.style.border = '1px solid blue';
+        dvar.style.margin = '100px 400px';
+        dvar.style.backgroundColor = 'blue';
+
+
+        dvar.addEventListener('click',function(){
+            console.log("Mouse is clicked");
+        });
+
+        dvar.addEventListener('dblclick',function(){
+            console.log("Mouse is double clicked");
+        });
+
+        dvar.addEventListener('mouseup',function(){
+            console.log("Mouse up done");
+        });
+
+        dvar.addEventListener('mousedown',function(){
+            console.log("Mouse down done");
+        });
+
+        dvar.addEventListener('mouseenter',function(){
+            console.log("Mouse entered");
+        });
+
+        dvar.addEventListener('mouseleave',function(){
+            console.log("Mouse left");
+        });
+
+        dvar.addEventListener('mousemove',function(){
+            console.log("Mouse is moving");
+        });
+
+        const ivar = document.getElementById('image-1');
+        ivar.style.height = '200px';
+        ivar.style.width = '200px';
+        ivar.style.margin = '100px';
+
+    </script>
+</body>
+</html>

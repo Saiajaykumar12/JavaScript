@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a{
+            text-decoration: none;
+            display: block;
+        }
+
+        #hide{
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <div class="parent" onmouseover="showmenu()" onmouseout="hidemenu()">Menu
+        <div class="child" id="hide">
+            <a href="">Home</a>
+            <a href="">Contact</a>
+            <a href="">Careers</a>
+            <a href="">About</a>
+        </div>
+    </div>
+
+    <script>
+
+        function showmenu(){
+            const showvar = document.getElementById('hide');
+            showvar.style.display = 'block';
+        }
+
+        function hidemenu(){
+            const hidevar = document.getElementById('hide');
+            hidevar.style.display = 'none';
+            
+        }
+
+    </script>
+</body>
+</html>

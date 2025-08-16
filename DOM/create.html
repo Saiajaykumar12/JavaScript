@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const h1var = document.createElement('h1');
+        console.log(h1var);
+        h1var.textContent = "Welcome to JS elements";
+        document.body.appendChild(h1var);
+        h1var.style.color = 'red';
+
+        const h2var = document.createElement('h2');
+        console.log(h2var);
+        h2var.textContent = "Context";
+        h1var.appendChild(h2var);
+        h2var.style.display = 'flex';
+        h2var.style.flexDirection = 'column';
+
+        const imgvar = document.createElement('img');
+        console.log(imgvar);
+        imgvar.setAttribute('src','https://cdn.pixabay.com/photo/2025/07/21/18/51/international-9726921_1280.jpg');
+        document.body.appendChild(imgvar);
+        imgvar.style.height = '350px';
+        imgvar.style.width = '600px';
+        // imgvar.style.padding = '50px 400px 800px 200px';
+        imgvar.style.position = 'relative';
+        imgvar.style.top = '50px';
+        imgvar.style.right = '400px';
+        imgvar.style.bottom = '800px';
+        imgvar.style.left = '200px';
+
+    </script>
+</body>
+</html>

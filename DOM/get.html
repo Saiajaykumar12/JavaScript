@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+
+    <div class="div1"></div>
+
+    <p id="paragraph"></p>
+
+    <script>
+        const hvar = document.getElementsByTagName('h1');
+        console.log(hvar);
+        hvar[0].textContent = "Get element by tagname";
+
+        const divi = document.getElementsByClassName('div1');
+        console.log(divi);
+        
+
+        const image1 = document.createElement('img');
+        console.log(image1);
+        divi[0].appendChild(image1);
+        image1.setAttribute('src','https://cdn.pixabay.com/photo/2025/07/10/07/24/house-9706056_1280.jpg');
+        image1.style.height = '200px';
+        image1.style.width = '200px';   
+
+        const para = document.getElementById('paragraph');
+        console.log(para);
+        document.body.appendChild(para);
+        para.textContent = "Get Element By Id name";
+
+    </script>
+</body>
+</html>
